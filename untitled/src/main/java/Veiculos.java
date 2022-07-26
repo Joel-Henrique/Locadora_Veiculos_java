@@ -46,8 +46,10 @@ public class Veiculos { //marca, modelo, número de registro, cor e disponibilid
         for (Veiculos v: veiculos){
             if(vc.getNúmeroregistro().equals(v.getNúmeroregistro())){
                 System.out.println("Veiculo já Cadastrado! ");
-            }else
+            }else {
+                v.setDisponibilidade("S");
                 veiculos.add(v);
+            }
         }
     }
     public static boolean Disponibilidade(Veiculos vc) {
